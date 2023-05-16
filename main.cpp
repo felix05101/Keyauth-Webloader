@@ -118,7 +118,7 @@ int main()
 
 
 
-	//buttons, 1 is the value
+	//buttons, 1 and 2 are the button values I choose on the KeyAuth dashboard
 	KeyAuthApp.button("1"); //close
 	KeyAuthApp.button("2"); //discord
 
