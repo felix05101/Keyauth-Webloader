@@ -8,10 +8,10 @@ const std::string compilation_date = (std::string)skCrypt(__DATE__);
 const std::string compilation_time = (std::string)skCrypt(__TIME__);
 using namespace KeyAuth;
 
-std::string name = "PurifyCheats"; 
-std::string ownerid = "7MXJE4V6xa"; 
-std::string secret = "c50ead0c51f8d7ceff12fed7ca2837d0f5b2fbb566d12ab8207d1cf1ca68d739"; 
-std::string version = "1.0"; 
+std::string name = 
+std::string ownerid = 
+std::string secret = 
+std::string version = 
 std::string url = skCrypt("https://keyauth.win/api/1.2/").decrypt(); 
 
 api KeyAuthApp(name, ownerid, secret, version, url);
@@ -91,7 +91,7 @@ void discord() //define what the buttons do like this
 {
 
 	KeyAuthApp.button("2");
-	system("start https://discord.gg/sEV8St4ZW4");
+	
 
 
 }
@@ -100,7 +100,7 @@ void discord() //define what the buttons do like this
 
 int main()
 {
-	std::string consoleTitle = ("PurifyCheats");
+	std::string consoleTitle = ("");
 	HWND consoleWindow = GetConsoleWindow();
 	ShowWindow(consoleWindow, SW_HIDE);
 	KeyAuthApp.init();
