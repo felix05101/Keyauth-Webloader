@@ -8,11 +8,11 @@ const std::string compilation_date = (std::string)skCrypt(__DATE__);
 const std::string compilation_time = (std::string)skCrypt(__TIME__);
 using namespace KeyAuth;
 
-std::string name = 
-std::string ownerid = 
-std::string secret = 
-std::string version = 
-std::string url = skCrypt("https://keyauth.win/api/1.2/").decrypt(); 
+std::string name = ""
+std::string ownerid = ""
+std::string secret = ""
+std::string version = ""
+std::string url = skCrypt("").decrypt(); 
 
 api KeyAuthApp(name, ownerid, secret, version, url);
 
