@@ -10,7 +10,7 @@ using namespace KeyAuth;
 
 std::string name = ""
 std::string ownerid = ""
-std::string secret = ""
+std::string secret = ""  //put your keyauth.win credentials here
 std::string version = ""
 std::string url = skCrypt("").decrypt(); 
 
@@ -91,27 +91,29 @@ void discord() //define what the buttons do like this
 {
 
 	KeyAuthApp.button("2");
-	
-
+	system("start https://discord.com");
 
 }
 
 
 
+
 int main()
 {
+	
 	std::string consoleTitle = ("");
 	HWND consoleWindow = GetConsoleWindow();
 	ShowWindow(consoleWindow, SW_HIDE);
 	KeyAuthApp.init();
 
-
-
-	std::thread run(close); //"include" the defines of the buttons like this
-	std::thread run2(discord);
+	std::thread close(close); 
+	std::thread discord(discord);
 
 	
-	KeyAuthApp.web_login(); //ignore
+	
+	
+	
+	KeyAuthApp.web_login(); 
 
 
 
@@ -119,8 +121,8 @@ int main()
 
 
 	//buttons, 1 and 2 are the button values I choose on the KeyAuth dashboard
-	KeyAuthApp.button("1"); //close
-	KeyAuthApp.button("2"); //discord
+	KeyAuthApp.button("1"); 
+	KeyAuthApp.button("2"); 
 
 
 	
